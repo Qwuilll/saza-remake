@@ -1,0 +1,60 @@
+--[[
+
+░██████╗░█████╗░███████╗░█████╗░
+██╔════╝██╔══██╗╚════██║██╔══██╗
+╚█████╗░███████║░░███╔═╝███████║
+░╚═══██╗██╔══██║██╔══╝░░██╔══██║
+██████╔╝██║░░██║███████╗██║░░██║
+╚═════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝
+
+░██████╗░█████╗░███████╗████████╗░██╗░░░░░░░██╗░█████╗░██████╗░███████╗
+██╔════╝██╔══██╗██╔════╝╚══██╔══╝░██║░░██╗░░██║██╔══██╗██╔══██╗██╔════╝
+╚█████╗░██║░░██║█████╗░░░░░██║░░░░╚██╗████╗██╔╝███████║██████╔╝█████╗░░
+░╚═══██╗██║░░██║██╔══╝░░░░░██║░░░░░████╔═████║░██╔══██║██╔══██╗██╔══╝░░
+██████╔╝╚█████╔╝██║░░░░░░░░██║░░░░░╚██╔╝░╚██╔╝░██║░░██║██║░░██║███████╗
+╚═════╝░░╚════╝░╚═╝░░░░░░░░╚═╝░░░░░░╚═╝░░░╚═╝░░╚═╝░░╚═╝╚═╝░░╚═╝╚══════╝
+Give Credit If u Use This Loader Son
+
+Made by : // SAZA SOFTWARE \\ 
+Founder: Zaaa 愛#1831
+Owner: Saskai#2799 
+Developer: Ikky#8337
+Staff: Fath#2767
+Manager: Linest#9286
+Discord: discord.gg/saza
+
+DONT DELETE THIS SCIVII ART 
+BECAUSE THIS IS MASTERPIECE
+IF DELETED THEN YOU DON'T APPRECIATE THE WORK
+]]
+repeat wait() until game:IsLoaded()
+local GameSupport = {
+    [9551640993] = {name="MiningSimulator2", script="https://raw.githubusercontent.com/QwertyzSZ/SazaSoftware/main/DonateMe/", working=true},
+    [2753915549] = {name="BloxFruit", script="https://raw.githubusercontent.com/QwertyzSZ/SazaSoftware/main/DonateMe/", working=true},
+    [4442272183] = {name="BloxFruit", script="https://raw.githubusercontent.com/QwertyzSZ/SazaSoftware/main/DonateMe/", working=true},
+    [7449423635] = {name="BloxFruit", script="https://raw.githubusercontent.com/QwertyzSZ/SazaSoftware/main/DonateMe/", working=true},
+    [6990131029] = {name="AnimeDimensionSimulator", script="https://raw.githubusercontent.com/QwertyzSZ/SazaSoftware/main/DonateMe/", working=true},
+    [6990129309] = {name="AnimeDimensionSimulator", script="https://raw.githubusercontent.com/QwertyzSZ/SazaSoftware/main/DonateMe/", working=true},
+    [6990133340] = {name="AnimeDimensionSimulator", script="https://raw.githubusercontent.com/QwertyzSZ/SazaSoftware/main/DonateMe/", working=true},
+    [7274690025] = {name="AnimeDimensionSimulator", script="https://raw.githubusercontent.com/QwertyzSZ/SazaSoftware/main/DonateMe/", working=true},
+    [7338881230] = {name="AnimeDimensionSimulator", script="https://raw.githubusercontent.com/QwertyzSZ/SazaSoftware/main/DonateMe/", working=true},
+    [6938803436] = {name="AnimeDimensionSimulator", script="https://raw.githubusercontent.com/QwertyzSZ/SazaSoftware/main/DonateMe/", working=true},
+    [6284583030] = {name="PetSimulatorX", script="https://raw.githubusercontent.com/QwertyzSZ/SazaSoftware/main/DonateMe/", working=true},
+    [10202755798] = {name="PetSimulatorX", script="https://raw.githubusercontent.com/QwertyzSZ/SazaSoftware/main/DonateMe/", working=true},
+}
+local GameID = game.PlaceId
+for i, v in pairs(GameSupport) do
+    if (GameID == tonumber(i) and v.name and v.working) then
+        GameName = v.name
+        urlBody = v.script
+        sazaFile = ".saza"
+        local success = pcall(function() 
+            SZExecutable = game:HttpGet(urlBody..GameName..sazaFile)
+        end);
+    elseif (v.name and not GameID == tonumber(i) or not v.working) then
+        game.Players.LocalPlayer:Kick("\n| Security Saza |".."\n Script is maintenance\n or \nGame not supported\n\n[discord.gg/saza]\n Link discord has Coppied\n Paste it on ur Website")
+        setclipboard(SZDiscord)
+    end
+end
+loadstring(SZExecutable)()
+return GameSupport
