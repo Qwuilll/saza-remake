@@ -39,7 +39,6 @@ local GameSupport = {
     [7274690025] = {name="AnimeDimensionSimulator", script="https://raw.githubusercontent.com/QwertyzSZ/SazaSoftware/main/DonateMe/", working=true},
     [7338881230] = {name="AnimeDimensionSimulator", script="https://raw.githubusercontent.com/QwertyzSZ/SazaSoftware/main/DonateMe/", working=true},
     [6938803436] = {name="AnimeDimensionSimulator", script="https://raw.githubusercontent.com/QwertyzSZ/SazaSoftware/main/DonateMe/", working=true},
-    [6284583030] = {name="PetSimulatorX", script="https://raw.githubusercontent.com/QwertyzSZ/SazaSoftware/main/DonateMe/", working=true},
     [10321372166] = {name="PetSimulatorX", script="https://raw.githubusercontent.com/QwertyzSZ/SazaSoftware/main/DonateMe/", working=true},
 }
 local GameID = game.PlaceId
